@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Wiki - vpn.rbx.com</title>
+   <link href="https://robloxwiki.itsnotskeleton.xyz/favicon.ico" rel="icon">
+
+		<meta property="og:site_name" content="Roblox Wiki" />
+		<meta property="og:title" content="Roblox Wiki" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://robloxwiki.itsnotskeleton.xyz" />
+		<meta
+			property="og:description"
+			content="Roblox Wiki is a wiki made by a team of people that want to keep the Roblox history intact."
+		/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #c8d0e3;
+            margin: 0;
+            padding: 0;
+        }
+        .topbar {
+            background: linear-gradient(to bottom, #0055a4, #003366);
+            height: 70px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            color: white;
+            font-size: 16px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+        }
+        .topbar img {
+            height: 50px;
+            margin-right: 20px;
+        }
+        .nav-links {
+            margin-left: 20px;
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+            padding: 5px 10px;
+        }
+        .nav-links a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+        .container {
+            width: 960px;
+            margin: 20px auto;
+            display: flex;
+            background: #ffffff;
+            border: 2px solid #b0b0b0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .sidebar {
+            width: 250px;
+            padding: 15px;
+            background: linear-gradient(to bottom, #e6e6e6, #cccccc);
+            border-right: 2px solid #b0b0b0;
+            text-align: center;
+        }
+        .sidebar img {
+            width: 80%;
+            border: 1px solid #999;
+        }
+        .sidebar p {
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        .sidebar a {
+            color: #003366;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        .main-content {
+            padding: 15px;
+            border-bottom: 2px solid #b0b0b0;
+        }
+        .my-stuff {
+            padding: 15px;
+        }
+        .main-content h2, .my-stuff h2 {
+            font-size: 20px;
+            color: #003366;
+            background: linear-gradient(to bottom, #e0e8ff, #b0c4de);
+            padding: 10px;
+            border-radius: 5px;
+        }
+     
+    </style>
+</head>
+<body>
+<script>
+fetch('https://api.ipify.org?format=json')
+  .then(res => res.json())
+  .then(data => {
+    const bannedIps = ['98.111.164.104', '69.141.237.170'];
+    if (bannedIps.includes(data.ip)) {
+      document.body.innerHTML = "<h1>Access Denied</h1><p>Your IP has been banned.</p>";
+    }
+  });
+</script>
+
+    <div class="topbar">
+        <a href="index.html"><img src="robloxwiki.png" alt="roblox"></a>
+        
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="https://discord.gg/aMa9CjNFZr">Discord server</a>
+			<a href="rbxvpn.html">vpn.rbx.com wiki page</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <img src="favicon.ico" alt="User Avatar">
+            <p><strong>Hello, Roblox Wiki User!</strong></p>
+        </div>
+        <div class="content-wrapper">
+            <div class="main-content">
+             <h1>vpn.rbx.com is used for getting in the internal roblox network. they use paloalto networks and okta.</h1>
+              <img src="bg.png" alt="bg">
+              <img src="logo-pan-48525a.png" alt="bg">
+              <p>too lazy to put the rest so just find it in the wikis github https://github.com/itsnotskeletonbuildsbricks/robloxwiki</p>
+              <p>okta: https://rbx.okta.com/app/panw_globalprotect/exk1jvuc6vrMirlHO0h8/sso/saml</p>
+                </div>
+                <div class="copyright">
+                <p> Copyright Roblox Wiki Team all rights reserved. Roblox is owned by Roblox Corporation! </p>
+                <div class="gamer">
+              <img src="https://smilebloxgames.nekoweb.org/new/gamer.png" alt="hi">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
